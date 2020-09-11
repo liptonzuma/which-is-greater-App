@@ -55,7 +55,6 @@ function Check(e) {
     } else if (parseInt(e.target.innerHTML) === ans1 && ans1 < ans2) {
 
         alert('You failed');
-        window.load;
         score.innerHTML = 0
         comment.innerHTML = ' '
     } else if (parseInt(e.target.innerHTML) === ans2 && ans2 > ans1) {
@@ -65,7 +64,6 @@ function Check(e) {
         comment.innerHTML = arrRandom();
     } else if (parseInt(e.target.innerHTML) === ans2 && ans2 < ans1) {
         alert('You failed');
-        window.load
         score.innerHTML = 0;
         comment.innerHTML = ' '
     }
