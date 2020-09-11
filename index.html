@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="form">
+                <form>
+                    <input class="name" type="text" required placeholder="Enter name">
+                    <button class="btn begin" type="submit">BEGIN</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="game">
+            <h2 class="player-score"><span class="player-name"> </span><span class="score">0</span></h2>
+            <h1 class="instruction">&star; Which is greater &star;</h1>
+            <p>There are two numbers select the greatest among them</p>
+            <h2 class="comment"></h2>
+            <div class="options">
+
+                <button class=" option-one"></button>
+                <span>OR</span>
+                <button class=" option-two"></button>
+            </div>
+
+            <button class="nxt" onclick="randomNumbers()">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

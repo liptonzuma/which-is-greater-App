@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: linear-gradient(to bottom, rgb(41, 40, 40), rgb(100, 200, 150));
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    height: 100vh;
+}
+
+.container .form {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    justify-content: center;
+    padding: 6rem 1rem;
+    transition: 2s all ease-in-out;
+}
+
+.form .name {
+    width: 20rem;
+    height: 3rem;
+    padding-left: 1.4rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+    background: rgb(196, 209, 203);
+    color: rgb(18, 19, 18);
+    border: none;
+    box-shadow: 1rem 1rem 1rem rgb(41, 40, 40);
+}
+
+.form .btn {
+    width: 5rem;
+    height: 3rem;
+    background: rgb(14, 231, 43);
+    color: #000;
+    border: none;
+    margin: auto;
+    box-shadow: 1rem 1rem 1rem rgb(41, 40, 40);
+    cursor: pointer;
+}
+
+.game {
+    color: silver;
+    padding: 5rem 0;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1.6rem;
+    opacity: 0;
+    transition: 600ms all 100ms ease-in;
+}
+
+.game .player-score {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.instruction {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.option-one {
+    color: red;
+    font-size: 1.89rem;
+    cursor: pointer;
+}
+
+.option-two {
+    color: #000;
+    font-size: 1.89rem;
+    cursor: pointer;
+}
+
+.check {
+    width: 5rem;
+    height: 3rem;
+    background: rgb(41, 46, 41);
+    color: rgb(169, 212, 14);
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background: rgb(51, 204, 31);
+    color: #000;
+}
+
+.nxt {
+    width: 5rem;
+    height: 3rem;
+    background: rgb(41, 46, 41);
+    color: rgb(169, 212, 14);
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.comment {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: springgreen;
+    font-size: 1rem;
+}
+
+.move {
+    position: absolute;
+    animation: 1s move forwards;
+}
+
+.show {
+    opacity: 1;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+}
+
+@keyframes move {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+@media (min-width:468px) {
+    .container .game {
+        padding: 5% 20%;
+    }
+}
